@@ -104,23 +104,57 @@ Mobile Desktop Nav
   color: #fff;
 }
 
-
+/* Modal header */
 .modal-header {
+  background-color: #007bff;
+  color: #fff;
   border-bottom: none;
 }
 
-.list-group-item {
-  border: none;
+/* Modal title */
+.modal-title {
+  font-weight: 600;
 }
 
-.list-group-item:hover {
-  background-color: #f0f0f0;
+/* Modal body */
+.modal-body {
+  padding: 1rem 2rem;
 }
 
-.list-group-item:focus {
-  outline: none;
-  background-color: #f0f0f0;
+/* Form label */
+.form-group label {
+  font-weight: 500;
 }
+
+/* Custom file input */
+.custom-file-label::after {
+  content: "Browse";
+}
+
+/* Modal footer */
+.modal-footer {
+  border-top: none;
+  padding: 1rem 2rem;
+}
+
+/* Cancel button */
+.modal-footer .btn-secondary {
+  background-color: #e9ecef;
+  color: #000;
+  border-color: #e9ecef;
+}
+
+/* Update button */
+.modal-footer .btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* File input style */
+.custom-file-input:lang(en)~.custom-file-label::after {
+  content: "Browse";
+}
+
 
 
 

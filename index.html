@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -211,39 +211,64 @@
                     <img class="services-img card-img" src="./assets/img/KRA.jpg" alt="Card image">
                     <div class="services-vertical card-img-overlay d-flex align-items-end">
                         <div class="services-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">KRA services</h3>
+                            <h3 class="card-title light-300">KRA New Pin</h3>
                             <button class="btn btn-outline-info text-bg-primary float-end" data-bs-toggle="modal" data-bs-target="#kraServices">Get Service</button>
                         </div>
                     </div>
                 </a>
               </div><!-- End service -->
 
-            <!-- Start service -->
-            <div class="col-md-4 mb-3">
-              <a href="#" class="services card border-0 shadow-lg overflow-hidden">
-                  <img class="services-img card-img" src="./assets/img/printing.jpg" alt="Card image">
-                  <div class="services-vertical card-img-overlay d-flex align-items-end">
-                      <div class="services-content text-start mb-3 ml-3 text-dark">
-                          <h3 class="card-title light-300">Printing</h3>
-                          <button class="btn btn-outline-info text-bg-primary float-end">Get Service</button>
-                      </div>
-                  </div>
-              </a>
-            </div><!-- End service -->
+              <div class="col-md-4 mb-3">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden" data-bs-toggle="modal" data-bs-target="#kraServices">
+                    <img class="services-img card-img" src="./assets/img/KRA.jpg" alt="Card image">
+                    <div class="services-vertical card-img-overlay d-flex align-items-end">
+                        <div class="services-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">KRA Nill Returns</h3>
+                            <button class="btn btn-outline-info text-bg-primary float-end" data-bs-toggle="modal" data-bs-target="#">Get Service</button>
+                        </div>
+                    </div>
+                </a>
+              </div><!-- End service -->
+
+              <div class="col-md-4 mb-3">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden" data-bs-toggle="modal" data-bs-target="#updateDetailsModal">
+                    <img class="services-img card-img" src="./assets/img/KRA.jpg" alt="Card image">
+                    <div class="services-vertical card-img-overlay d-flex align-items-end">
+                        <div class="services-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">KRA Employee Returns</h3>
+                            <button class="btn btn-outline-info text-bg-primary float-end" data-toggle="modal" data-target="#updateDetailsModal">Get Service</button>
+                        </div>
+                    </div>
+                </a>
+              </div><!-- End service -->
 
 
-            <!-- Start service -->
-            <div class="col-md-4 mb-3">
-              <a href="#" class="services card border-0 shadow-lg overflow-hidden">
-                  <img class="services-img card-img" src="./assets/img/web dev.jpg" alt="Card image">
-                  <div class="services-vertical card-img-overlay d-flex align-items-end">
-                      <div class="services-content text-start mb-3 ml-3 text-dark">
-                          <h3 class="card-title light-300">Web Development</h3>
-                          <button class="btn btn-outline-info text-bg-primary float-end">Get Service</button>
-                      </div>
-                  </div>
-              </a>
-            </div><!-- End service -->
+              <!-- Start service -->
+              <div class="col-md-4 mb-3">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden">
+                    <img class="services-img card-img" src="./assets/img/printing.jpg" alt="Card image">
+                    <div class="services-vertical card-img-overlay d-flex align-items-end">
+                        <div class="services-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Printing</h3>
+                            <button class="btn btn-outline-info text-bg-primary float-end">Get Service</button>
+                        </div>
+                    </div>
+                </a>
+              </div><!-- End service -->
+
+
+              <!-- Start service -->
+              <div class="col-md-4 mb-3">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden">
+                    <img class="services-img card-img" src="./assets/img/web dev.jpg" alt="Card image">
+                    <div class="services-vertical card-img-overlay d-flex align-items-end">
+                        <div class="services-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Web Development</h3>
+                            <button class="btn btn-outline-info text-bg-primary float-end">Get Service</button>
+                        </div>
+                    </div>
+                </a>
+              </div><!-- End service -->
 
           </div>
       </div>
@@ -336,6 +361,51 @@
     </div>
   </div>
 </div>
+
+
+
+<!--employee kra returns Update Details Modal -->
+<div class="modal fade" id="updateDetailsModal" tabindex="-1" role="dialog" aria-labelledby="updateDetailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateDetailsModalLabel">Update Details</h5>
+        <button type="button" class="btn-close text-white" data-dismiss="modal" aria-label="Close">
+          
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="kraPin">KRA PIN:</label>
+            <input type="text" class="form-control" id="kraPin" name="kraPin">
+          </div>
+          <div class="form-group">
+            <label for="kraPassword">KRA Password:</label>
+            <input type="password" class="form-control" id="kraPassword" name="kraPassword">
+          </div>
+          <div class="form-group">
+            <label for="p9">P9:</label>
+            <input type="file" class="form-control-file" id="p9" name="p9">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
