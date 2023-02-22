@@ -23,6 +23,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/sweetalert2/sweetalert2.min.css">
 
 
   <!-- Main Css  -->
@@ -37,11 +38,11 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-8 logo">
-          <h1>Quick Office</h1>
+          <h1>Quick Office Pointe</h1>
         </div>
         <div class="col-2"></div>
-        <div class="col-2 dropdown overflow-hidden" style="border: 1px solid #ADD8E6; border-radius: 30px;">
-          <i class="bi bi-person-circle fs-3 dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">&nbsp;</i>
+        <div class="col-2 dropdown" style="border: 1px solid #ADD8E6; border-radius: 30px;">
+          <i class="bi bi-person-circle fs-3 dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></i>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Login</a></li>
             <li><a class="dropdown-item" href="#">Register</a></li>
@@ -68,11 +69,11 @@
   <!-- Mobile Navigation Bar -->
   <nav class="mobile-nav">
     <ul class="icons">
-      <li><a href="#"><i class="bi bi-house"></i></a></li>
-      <li><a href="#"><i class="bi bi-file-play"></i></a></li>
-      <li><a href="#"><i class="bi bi-tools"></i></a></li>
-      <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
-      <li><a href="#"><i class="bi bi-list"></i></a></li>
+      <li><i class="bi bi-house-fill" style="color: #0096D5; font-size: 1.5rem;"></i></li>
+      <li><i class="bi bi-file-play-fill" style="color: #0096D5; font-size: 1.5rem;"></i></li>
+      <li><i class="bi bi-tools" style="color: #0096D5; font-size: 1.5rem;" ></i></li>
+      <li><i class="bi bi-person-circle" style="color: #0096D5; font-size: 1.5rem;" ></i></li>
+      <li><i class="bi bi-list" style="color: #0096D5; font-size: 1.5rem;"></i></li>
     </ul>
   </nav>
 
@@ -86,7 +87,7 @@
             <h1>Welcome to <span>Quick Office Pointe</span></h1>
             <h2>Solution home to your Software and Hardware problems</h2>
             <div class="text-center text-lg-start">
-              <a href="#" class="btn-get-started scrollto">Quick Service</a>
+              <button class="btn-get-started scrollto" ></button>>Quick Service</button><!--onclick="swalert()" wait don't uncomment yet--> 
             </div>
           </div>
         </div>
@@ -206,12 +207,12 @@
 
               <!-- Start service -->
               <div class="col-md-4 mb-3">
-                <a href="#" class="services card border-0 shadow-lg overflow-hidden">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden" data-bs-toggle="modal" data-bs-target="#kraServices">
                     <img class="services-img card-img" src="./assets/img/KRA.jpg" alt="Card image">
                     <div class="services-vertical card-img-overlay d-flex align-items-end">
                         <div class="services-content text-start mb-3 ml-3 text-dark">
                             <h3 class="card-title light-300">KRA services</h3>
-                            <button class="btn btn-outline-info text-bg-primary float-end">Get Service</button>
+                            <button class="btn btn-outline-info text-bg-primary float-end" data-bs-toggle="modal" data-bs-target="#kraServices">Get Service</button>
                         </div>
                     </div>
                 </a>
@@ -317,6 +318,25 @@
   </main><!-- End #main -->
   <hr>
 
+  <!-- Modal -->
+<div class="modal fade" id="kraServices" tabindex="-1" aria-labelledby="kraServicesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="kraServicesLabel">Choose KRA Service</h5>
+        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">New KRA Pin</a>
+          <a href="#" class="list-group-item list-group-item-action">Employee Returns</a>
+          <a href="#" class="list-group-item list-group-item-action">Nill Returns</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -385,16 +405,6 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-
-  <script>
-    const dropdownToggle = document.getElementById('#dropdownMenuButton');
-    const dropdownMenu = document.getElementById('#menu-dropdown');
-
-    dropdownToggle.addEventListener('click', function() {
-      dropdownMenu.classList.toggle('show');
-    });
-
-  </script>
   
 
   <!-- Vendor JS Files -->
@@ -406,12 +416,12 @@
   <script src="assets/js/fslightbox.js"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/isotope.pkgd.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<script src="assets/js/sweetalert2/sweetalert2.all.min.js"></script>
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sweetalert.js"></script>
 
 </body>
 
