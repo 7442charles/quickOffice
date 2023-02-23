@@ -57,9 +57,9 @@
   <nav class="desktop-nav">
     <h1>Quick Office</h1>
     <ul class="menu">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#">Videos</a></li>
-      <li><a href="#">Services</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#">Login</a></li>
       <li><a href="#">Register</a></li>
       <li><a href="#">Contact</a></li>
@@ -86,14 +86,8 @@
           <div data-aos="zoom-out">
             <h1>Welcome to <span>Quick Office Pointe</span></h1>
             <h2>Solution home to your Software and Hardware problems</h2>
-            <div class="text-center text-lg-start">
-              <button class="btn-get-started scrollto">Quick Service</button><!--onclick="swalert()" wait don't uncomment yet--> 
-            </div>
           </div>
         </div>
-        <!--<div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>-->
         <div class="col-lg-4 video-box order-1 order-lg-2 img-fluid animated hero-img " data-aos="zoom-out" data-aos-delay="300">
           <a href="https://www.youtube.com/watch?app=desktop&v=Y2guGNqeFc4" class="glightbox play-btn mb-4"></a>
         </div>
@@ -120,7 +114,7 @@
   <main id="main">
 
     <!-- Start service -->
-    <section class="py-5 mb-5">
+    <section class="py-5 mb-5" id="services">
       <div class="container">
           <div class="services-header row text-center pb-5">
               <h1 class="col-md-6 m-auto h1 semi-bold-600 py-5">Our Services</h2>
@@ -231,12 +225,12 @@
               </div><!-- End service -->
 
               <div class="col-md-4 mb-3">
-                <a href="#" class="services card border-0 shadow-lg overflow-hidden" data-bs-toggle="modal" data-bs-target="#updateDetailsModal">
+                <a href="#" class="services card border-0 shadow-lg overflow-hidden" data-bs-toggle="modal" data-bs-target="">
                     <img class="services-img card-img" src="./assets/img/KRA.jpg" alt="Card image">
                     <div class="services-vertical card-img-overlay d-flex align-items-end">
                         <div class="services-content text-start mb-3 ml-3 text-dark">
                             <h3 class="card-title light-300">KRA Employee Returns</h3>
-                            <button class="btn btn-outline-info text-bg-primary float-end" data-toggle="modal" data-target="#updateDetailsModal">Get Service</button>
+                            <button class="btn btn-outline-info text-bg-primary float-end" data-toggle="modal" data-target="">Get Service</button>
                         </div>
                     </div>
                 </a>
@@ -343,68 +337,6 @@
   </main><!-- End #main -->
   <hr>
 
-  <!-- Modal -->
-<div class="modal fade" id="kraServices" tabindex="-1" aria-labelledby="kraServicesLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title" id="kraServicesLabel">Choose KRA Service</h5>
-        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">New KRA Pin</a>
-          <a href="#" class="list-group-item list-group-item-action">Employee Returns</a>
-          <a href="#" class="list-group-item list-group-item-action">Nill Returns</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!--employee kra returns Update Details Modal -->
-<div class="modal fade" id="updateDetailsModal" tabindex="-1" role="dialog" aria-labelledby="updateDetailsModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="updateDetailsModalLabel">Update Details</h5>
-        <button type="button" class="btn-close text-white" data-dismiss="modal" aria-label="Close">
-          
-        </button>
-      </div>
-      <form>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" class="form-control" id="phone" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="kraPin">KRA PIN:</label>
-            <input type="text" class="form-control" id="kraPin" name="kraPin">
-          </div>
-          <div class="form-group">
-            <label for="kraPassword">KRA Password:</label>
-            <input type="password" class="form-control" id="kraPassword" name="kraPassword">
-          </div>
-          <div class="form-group">
-            <label for="p9">P9:</label>
-            <input type="file" class="form-control-file" id="p9" name="p9">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-primary">Update</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 
 
   <!-- ======= Footer ======= -->
@@ -491,7 +423,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!--<script src="assets/js/sweetalert.js"></script>-->
 
 </body>
 
